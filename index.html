@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Food Storage - Kotak Penyimpanan Makanan Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGzwycJ7fC6DYVo_eUzS_tHR3q25pFffNmMg&s">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f5f2;
+            color: #5a4a42;
+        }
+        
+        .benefit-card {
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .promo-timer {
+            background: linear-gradient(135deg, #d4a373 0%, #bc6c25 100%);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(212, 163, 115, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(212, 163, 115, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(212, 163, 115, 0);
+            }
+        }
+        
+        .price-tag {
+            position: relative;
+        }
+        
+        .price-tag::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 50%);
+            border-radius: 0.5rem;
+        }
+        
+        .original-price {
+            position: relative;
+        }
+        
+        .original-price::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #bc6c25;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-leaf text-2xl text-emerald-600 mr-2"></i>
+                <span class="text-xl font-bold text-brown-800">FreshStore</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="text-brown-600 hover:text-brown-800">Fitur</a>
+                <a href="#details" class="text-brown-600 hover:text-brown-800">Detail</a>
+                <a href="#testimonials" class="text-brown-600 hover:text-brown-800">Testimoni</a>
+                <a href="#order" class="text-brown-600 hover:text-brown-800">Pesan</a>
+            </div>
+            <button class="md:hidden text-brown-800">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <section class="w-full bg-white">
+        <div class="container mx-auto px-4 py-8">
+            <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdxx-m01ntw2mhr8u04.webp" alt="Vegetable Food Storage" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <!-- Product Title & Description -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-brown-800 mb-4">Vegetable Food Storage</h1>
+            <p class="text-lg text-brown-600 text-center max-w-3xl mx-auto">
+                Kotak penyimpanan ini sangat berguna untuk menyimpan berbagai macam makanan, sayuran di dalam kulkas. Cocok untuk ibu rumah tangga agar barang yang ditaruh dikulkas lebih terorganisir dan tampilan kulkas lebih tertata dan rapi.
+            </p>
+        </div>
+    </section>
+
+    <!-- Product Benefits -->
+    <section id="features" class="py-12 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-brown-800 mb-8">Keunggulan Produk</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Benefit 1 -->
+                <div class="benefit-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-utensils text-amber-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brown-800">Multi Fungsi</h3>
+                    </div>
+                    <p class="text-brown-600">Mudah digunakan sesuai kebutuhan, bisa untuk menyimpan berbagai jenis makanan dan sayuran.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-shield-alt text-amber-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brown-800">Material Premium</h3>
+                    </div>
+                    <p class="text-brown-600">Terbuat dari material yang tebal, food grade, dan mudah dipindahkan.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-wind text-amber-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brown-800">Anti Bau</h3>
+                    </div>
+                    <p class="text-brown-600">Menjaga makanan tetap fresh dan bebas dari bau tidak sedap di kulkas.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="benefit-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-boxes text-amber-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brown-800">Hemat Ruang</h3>
+                    </div>
+                    <p class="text-brown-600">Dapat menghemat ruang dan membuat rapi isi kulkas Anda.</p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="benefit-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-eye text-amber-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brown-800">Transparan</h3>
+                    </div>
+                    <p class="text-brown-600">Warna transparan membuat isi kotak mudah dilihat dan diambil.</p>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="benefit-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-heart text-amber-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-brown-800">Ramah Lingkungan</h3>
+                    </div>
+                    <p class="text-brown-600">Dapat digunakan berulang kali, mengurangi penggunaan plastik sekali pakai.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section id="details" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-brown-800 mb-8">Detail Produk</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Detail 1 -->
+                <div class="text-center">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-m0137lgw3m5kf9.webp" alt="Detail Produk 1" class="w-full h-auto rounded-lg shadow-md mb-4">
+                    <p class="text-brown-600">Desain ergonomis dengan tutup yang rapat untuk menjaga kesegaran makanan</p>
+                </div>
+                
+                <!-- Detail 2 -->
+                <div class="text-center">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbkb-m6ewszcxhflge1.webp" alt="Detail Produk 2" class="w-full h-auto rounded-lg shadow-md mb-4">
+                    <p class="text-brown-600">Ukuran yang pas untuk berbagai jenis sayuran dan buah-buahan</p>
+                </div>
+                
+                <!-- Detail 3 -->
+                <div class="text-center">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m0mgqliwhlu4bd.webp" alt="Detail Produk 3" class="w-full h-auto rounded-lg shadow-md mb-4">
+                    <p class="text-brown-600">Material transparan memudahkan identifikasi isi tanpa harus membuka</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Specifications -->
+    <section class="py-12 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-brown-800 mb-8">Spesifikasi Produk</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Spec 1 -->
+                <div class="text-center">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasj-m0ssuqyetx8ea6.webp" alt="Spesifikasi 1" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                
+                <!-- Spec 2 -->
+                <div class="text-center">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3czowt50g5w08.webp" alt="Spesifikasi 2" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                
+                <!-- Spec 3 -->
+                <div class="text-center">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m3czhlvg0s7obd.webp" alt="Spesifikasi 3" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-brown-800 mb-8">Apa Kata Pelanggan Kami?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-amber-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center mr-4">
+                            <span class="text-amber-700 font-bold">AS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-brown-800">Anita Sari</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-brown-600 italic">"Kotak penyimpanan ini benar-benar mengubah cara saya mengatur kulkas. Sekarang semua lebih rapi dan mudah dicari. Yang paling saya suka adalah tutupnya yang rapat sehingga sayuran tetap segar lebih lama."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-amber-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center mr-4">
+                            <span class="text-amber-700 font-bold">BW</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-brown-800">Budi Wibowo</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-brown-600 italic">"Sebagai seorang chef, saya sangat memperhatikan penyimpanan bahan makanan. Produk ini sangat membantu menjaga kesegaran bahan-bahan saya. Materialnya juga kuat dan mudah dibersihkan."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-amber-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center mr-4">
+                            <span class="text-amber-700 font-bold">DM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-brown-800">Dewi Mulyani</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-brown-600 italic">"Saya sudah mencoba banyak merek kotak penyimpanan, tapi ini yang paling bagus. Tidak mudah retak meskipun sering dipakai dan benar-benar kedap udara. Kulkas saya sekarang terlihat sangat rapi!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Notes -->
+    <section class="py-8 bg-amber-100">
+        <div class="container mx-auto px-4">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold text-brown-800 mb-4">Catatan Pemesanan & Pengiriman</h3>
+                <ul class="space-y-2 text-brown-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-truck text-amber-600 mt-1 mr-2"></i>
+                        <span>Pengiriman 2 - 4 Hari Setelah Pemesanan</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-amber-600 mt-1 mr-2"></i>
+                        <span>Mohon Isi Alamat Dengan Lengkap</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-600 mt-1 mr-2"></i>
+                        <span>100% Product Original</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Order Section -->
+    <section id="order" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Promo Image -->
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbkb-m8vktzq631t9a5.webp" alt="Promo Diskon" class="w-full h-auto rounded-lg shadow-md mb-8">
+                
+                <!-- Pricing -->
+                <div class="bg-amber-50 p-6 rounded-lg shadow-md mb-8">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-brown-800 mb-2">PROMO SPESIAL HARI INI</h3>
+                        <p class="text-brown-600">Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                        <!-- Promo Price -->
+                        <div class="price-tag bg-gradient-to-br from-amber-400 to-amber-600 p-6 rounded-lg text-center text-white w-full md:w-1/2">
+                            <p class="text-lg mb-1">Harga Promo</p>
+                            <p class="text-4xl font-bold">Rp 185.000</p>
+                        </div>
+                        
+                        <!-- Original Price -->
+                        <div class="original-price text-center w-full md:w-1/2">
+                            <p class="text-lg text-brown-600 mb-1">Harga Normal</p>
+                            <p class="text-3xl font-bold text-brown-400">Rp 250.000</p>
+                            <p class="text-amber-600 font-semibold mt-2">Anda Hemat Rp 65.000</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Form -->
+                <div class="bg-white border border-amber-200 rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-amber-600 text-white px-6 py-4">
+                        <h3 class="text-xl font-bold">FORM PEMESANAN</h3>
+                        <p class="text-sm">Isi data dengan lengkap dan benar</p>
+                    </div>
+                    <div class="p-6">
+                        <!-- OrderOnline Embed Code - v8.0.4 -->
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="emma" data-product-slug="vegetable-food-storage" data-product-id="6865400c0a42cfb66d08152c" id="oo-embed-form-vegetable-food-storage-9281" data-origin="orderonline">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                        <script>
+                            if (typeof xLogError != 'function') {
+                                var xLogError = function (error) {
+                                    var req = new XMLHttpRequest();
+                                    var payload = JSON.stringify({
+                                        url: document.location.href,
+                                        line: error.line,
+                                        stack: error.stack
+                                    });
+                                    var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                    req.open('POST', 'https://api.orderonline.id/log', true);
+                                    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                    req.send(params);
+                                };
+                            }
+                            try {
+                                if (typeof xEmbedScript != 'function') {
+                                    var xEmbedScript = function () {
+                                        !function(w, d, e, v, id, t, s) {
+                                            if (d.getElementById(id)) return;
+                                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                            s = d.getElementsByTagName(e)[0];
+                                            s.parentNode.insertBefore(t, s);
+                                        }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                    };
+                                }
+                                if (typeof xEmbedInit != 'function') {
+                                    var xEmbedInit = function (w, n) {
+                                        if (w.ooe) return;
+                                        n = w.ooe = function() {
+                                            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                        };
+                                        if (!w._ooe) w._ooe = n;
+                                        n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                    };
+                                }
+                                xEmbedInit(window);
+                                ooe('setup', 'redirect', 'https://emma.orderonline.id');
+                                ooe('init', '5f16831a9d8e8e4fb67472e5', '6865400c0a42cfb66d08152c', '6865400c0a42cfb66d08152d', 'oo-embed-form-vegetable-food-storage-9281', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+                                if (!window.jQuery) {
+                                    !function(w, d, e, v, id, t, s) {
+                                        if (d.getElementById(id)) return;
+                                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                        t.addEventListener('load', xEmbedScript);
+                                        s = d.getElementsByTagName(e)[0];
+                                        s.parentNode.insertBefore(t, s);
+                                    }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                                } else {
+                                    xEmbedScript();
+                                }
+                            } catch (e) {
+                                xLogError(e);
+                                throw e;
+                            }
+                        </script>
+                        <!-- End OrderOnline Embed Code -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-leaf text-2xl text-emerald-400 mr-2"></i>
+                        <span class="text-xl font-bold">FreshStore</span>
+                    </div>
+                    <p class="text-brown-300 mt-2">Solusi Penyimpanan Makanan Modern</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-brown-300 hover:text-white">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="#" class="text-brown-300 hover:text-white">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-brown-300 hover:text-white">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-brown-700 mt-6 pt-6 text-center text-brown-300 text-sm">
+                <p>© 2023 FreshStore. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
